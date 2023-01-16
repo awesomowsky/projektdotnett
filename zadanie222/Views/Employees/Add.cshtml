@@ -1,0 +1,33 @@
+﻿@model zadanie222.Models.AddEmployeeViewModel
+
+@{
+}
+<h1>Dodaj pracownika</h1>
+<form method="post" action="Add" class="mt-5"> 
+  <div class="mb-3">
+    <label for="" class="form-label">Imię</label>
+    <input type="text" class="form-control" asp-for="FirstName"> 
+  </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nazwisko</label>
+        <input type="text" class="form-control" asp-for="LastName">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Numer telefonu</label>
+        <input type="number" class="form-control" asp-for="Phone">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Oddział</label>
+        <input type="text" class="form-control" asp-for="Department">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Adres zamieszkania</label>
+        <input type="text" class="form-control" asp-for="Address">
+    </div>
+  
+  <button type="submit" class="btn btn-primary">Dodaj</button>
+</form>

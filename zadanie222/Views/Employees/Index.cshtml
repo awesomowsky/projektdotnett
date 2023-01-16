@@ -1,0 +1,35 @@
+﻿@model List<zadanie222.Models.Domain.Employee>
+
+@{
+}
+
+<h1>Pracownicy</h1>
+<table class="table">
+    <thead>
+        <tr>
+           
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Email</th>
+            <th>Numer telefonu</th>
+            <th>Oddział</th>
+            <th>Adres</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td>@employee.Email</td>
+                <td>@employee.Phone</td>
+                <td>@employee.Department</td>
+                <td>@employee.Address</td>
+                <td><a href="Employees/View/@employee.Id">Edytuj</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
